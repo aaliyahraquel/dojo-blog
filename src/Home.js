@@ -18,6 +18,7 @@ const Home = () => {
   useEffect(() => {
     console.log(name)
   }, [name]); // an empty dependency array only allows the useEffect hook to render on the first initial render, ONLY
+  // when there's a value in the array, the page renders upon the cnage of state of that value
 
   return ( 
     <div className="home">
