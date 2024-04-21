@@ -1,4 +1,4 @@
-const Navbar = () => {
+const Navbar = () => { // a component is a function which renders some JSX
   return (  
     <nav className="navbar">
       <h1>The Dojo Blog</h1>
