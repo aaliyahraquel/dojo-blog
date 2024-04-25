@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useHistory } from 'react-router-dom'; // used to programmatically navigate users between different views
 
 const Create = () => {
 
@@ -6,6 +7,7 @@ const Create = () => {
   const [body, setBody] = useState('');
   const [author, setAuthor] = useState('mario');
   const [isLoading, setIsLoading] = useState(false);
+  const history = useHistory(); // an object 
 
   const handleSubmit = (e) => {
     e.preventDefault(); //prevents form from submitting and refreshing
@@ -20,6 +22,8 @@ const Create = () => {
     }).then(() => { //action when the fetch request has been resolved
       console.log('new blog added');
       setIsLoading(false)
+      // history.go(-1) or history.go(1) brings the customer back to the lasy page they visited or forward
+      history.push('/');  // redirects to homepage
     })
   }
   return ( 
@@ -49,9 +53,6 @@ const Create = () => {
         </select>
         {!isLoading && <button>Add blog!</button>}
         {isLoading && <button disabled>Adding blog...</button>}
-        <p>{title}</p>
-        <p>{body}</p>
-        <p>{author}</p>
       </form>
     </div>
    );
