@@ -1,12 +1,6 @@
 {
   "blogs": [
     {
-      "title": "My First Blog",
-      "body": "Why do we use it?\nWe shall find out!",
-      "author": "mario",
-      "id": "1"
-    },
-    {
       "title": "My Second Blog",
       "body": "Why do we use it?\nWe shall find out!",
       "author": "yoshu",
