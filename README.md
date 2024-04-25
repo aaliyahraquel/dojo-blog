@@ -1,4 +1,4 @@
-A simple blog web application where users can view, add and delete blogs from a local database. 
+A simple blog, react web application where users can view, add and delete blogs from a local database. 
 
 To run application:
 
