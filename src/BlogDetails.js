@@ -10,7 +10,7 @@ const BlogDetails = () => {
     <div className="blog-details">
       {isLoading && <div>Loading...</div>}
       {error && <div>{ error }</div>}
-      {blog && (
+      {blog && ( // return template with parentheses
         <article>
           <h2>{ blog.title }</h2>
           <p>Written by { blog.author }</p>
